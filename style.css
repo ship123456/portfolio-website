@@ -277,11 +277,23 @@ header {
   grid-template-columns: repeat(2, 1fr);
   gap: 8px 16px;
   list-style: none;
-  margin-top: auto;
+  margin-top: 18px;
   margin-bottom: 20px;
 }
-.project-card:last-child .two-col-list {
-  margin-bottom: 90px;
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-content .project-link,
+.project-content .project-actions {
+  margin-top: auto;
 }
 .two-col-list li {
   color: #334155;
@@ -444,4 +456,35 @@ header {
     justify-content: center;
     padding: 80px 24px;
   }
+}
+
+/* Payment Gateway card only */
+
+.project-card:first-child .demo-login {
+  margin-bottom: 18px;
+}
+
+.project-card:first-child .demo-login h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.project-card:first-child .demo-login p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.project-card:first-child .project-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.project-card:first-child .half-btn {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+.demo-title {
+  font-weight: 500;
+  margin-bottom: 6px;
 }
